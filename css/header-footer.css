@@ -5,8 +5,9 @@ header {
 
   padding-top: 16px;
   padding-bottom: 16px;
-
   margin-bottom: 32px;
+
+  box-shadow: 5px 5px 5px #888888;
 }
 
 footer {

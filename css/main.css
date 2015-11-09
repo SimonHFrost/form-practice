@@ -11,6 +11,8 @@ body {
 main {
   background-color: white;
 
+  box-shadow: 5px 5px 5px #888888;
+
   border-style: solid;
   border-width: 2px;
   border-color: grey;
