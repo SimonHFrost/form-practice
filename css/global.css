@@ -1,5 +1,6 @@
 body {
-  background-color: purple;
+  background-image: url("../images/mars.png");
+  background-repeat: repeat;
 
   font-family: 'Roboto', sans-serif;
   margin: 0px;
