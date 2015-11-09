@@ -1,0 +1,32 @@
+form {
+  display: table;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input, button {
+  font-size: 16px;
+  padding: 8px;
+}
+
+button[type="submit"] {
+  margin: auto;
+  display: block;
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+.column {
+  display: table-cell;
+  width: 300px;
+}
+
+.column > * {
+  display: block;
+}
