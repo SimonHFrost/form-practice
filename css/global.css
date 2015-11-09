@@ -11,7 +11,7 @@ main {
 
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  max-width: 800px;
 }
 
 header {
@@ -40,4 +40,10 @@ footer p {
 footer div {
   display: table-cell;
   vertical-align: middle;
+}
+
+button[type="submit"] {
+  margin: auto;
+  width: 200px;
+  display: block;
 }
