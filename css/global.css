@@ -29,6 +29,11 @@ header {
   background-color: blue;
 
   text-align: center;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-bottom: 32px;
 }
 
 footer {
