@@ -69,6 +69,10 @@ form {
   width: 100%;
 }
 
+.row {
+  margin-bottom: 16px
+}
+
 .column {
   display: table-cell;
   width: 350px;
