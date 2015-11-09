@@ -1,6 +1,9 @@
 form {
   display: table;
   width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 10px;
 }
 
 label {
@@ -13,18 +16,23 @@ input, button {
   padding: 8px;
 }
 
+input[type="text"], input[type="password"] {
+  width: 240px;
+}
+
 button[type="submit"] {
+  width: 100%;
   margin: auto;
   display: block;
 }
 
 .row {
-  margin-bottom: 16px;
+  display: table-row;
 }
 
 .column {
   display: table-cell;
-  width: 300px;
+  width: 50%;
 }
 
 .column > * {
