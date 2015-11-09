@@ -5,7 +5,7 @@ header {
 
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 
   box-shadow: 5px 5px 5px #888888;
 }
@@ -14,10 +14,8 @@ footer {
   background-color: red;
 
   display: table;
-  height: 64px;
   width: 100%;
 
-  margin-top: 32px;
   text-align: center;
   vertical-align: center;
 }
@@ -30,4 +28,22 @@ footer div {
 footer p {
   display: inline;
   margin: 32px;
+}
+
+/*
+ *  Sticky Footer by Ryan Fait
+ *  http://ryanfait.com/
+ */
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -64px;
+}
+
+footer, .push {
+  height: 64px;
 }
