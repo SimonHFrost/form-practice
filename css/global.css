@@ -9,3 +9,7 @@ header {
 footer {
   text-align: center;
 }
+
+footer p {
+  display: inline;
+}
