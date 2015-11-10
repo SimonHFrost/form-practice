@@ -31,7 +31,6 @@ body {
 .wrapper {
   min-height: 100%;
   margin: 0 auto -64px;
-  padding-bottom: 64px;
 }
 
 footer, .sticky-footer-adjust {
