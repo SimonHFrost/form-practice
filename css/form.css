@@ -57,7 +57,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: pink;
+  background-color: red;
   transition: background-color 200ms linear;
 }
 

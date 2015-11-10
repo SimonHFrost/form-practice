@@ -18,6 +18,11 @@ nav li {
   background-color: white;
 }
 
+nav li:hover {
+  background-color: red;
+  transition: background-color 200ms linear;
+}
+
 nav a {
   text-decoration: none;
   color: black;
