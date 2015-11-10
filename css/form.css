@@ -57,11 +57,12 @@ button[type="submit"] {
   width: 100%;
   margin: auto;
   display: block;
-  background-color: white;
+  background-color: pink;
 }
 
 button[type="submit"]:hover {
-  background-color: red;
+  background-color: white;
+  color: pink;
   transition: background-color 200ms linear;
 }
 

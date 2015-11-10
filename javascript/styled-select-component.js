@@ -2,8 +2,8 @@
 window.jQuery = $ = require( 'jquery' )
 require( 'drmonty-chosen' )
 
-function prepareSelect( options ) {
+function styledSelectComponent( options ) {
   $( options.nationalityElement ).chosen()
 }
 
-module.exports = prepareSelect
+module.exports = styledSelectComponent

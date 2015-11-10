@@ -1,17 +1,17 @@
-var fetchAvatar = require( './fetch-avatar' )
-var prepareSelect = require( './prepare-select' )
-var prepareDateValidation = require( './prepare-date-validation' )
+var avatarLookup = require( './fetch-avatar' )
+var styledSelectComponent = require( './styled-select-component' )
+var dateValidation = require( './prepare-date-validation' )
 
-fetchAvatar({
+avatarLookup({
   imageElement: '#avatar',
   emailElement: '[name="email"]'
 })
 
-prepareSelect({
+styledSelectComponent({
   nationalityElement: '[name="nationality"]'
 })
 
-prepareDateValidation({
+dateValidation({
   dateElement: '[name="birthdate"]',
   formElement: 'form'
 })

@@ -1,6 +1,6 @@
 var DATE_REGEX = "[0-9]{1,2}\/[0-1]?[0-9]\/[0-9]{4}"
 
-function prepareDateValidation( options ) {
+function dateValidation( options ) {
   var dateElement = document.querySelector( options.dateElement )
   var formElement = document.querySelector( options.formElement )
 
@@ -13,4 +13,4 @@ function prepareDateValidation( options ) {
 
 }
 
-module.exports = prepareDateValidation
+module.exports = dateValidation

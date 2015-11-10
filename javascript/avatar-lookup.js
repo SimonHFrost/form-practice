@@ -4,7 +4,7 @@ var debounce = require( 'debounce' )
 var GRAVATAR_URL = 'http://www.gravatar.com/avatar/'
 var DEBOUNCE_DELAY = 1000
 
-function fetchAvatar( options ) {
+function avatarLookup( options ) {
   var imageElement = document.querySelector( options.imageElement )
   var emailElement = document.querySelector( options.emailElement )
 
@@ -20,4 +20,4 @@ function fetchAvatar( options ) {
   })
 }
 
-module.exports = fetchAvatar
+module.exports = avatarLookup
