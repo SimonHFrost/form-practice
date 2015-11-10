@@ -1,17 +1,17 @@
-var fetchAvatar = require( './fetch-gravatar' )
+var fetchAvatar = require( './fetch-avatar' )
 var prepareSelect = require( './prepare-select' )
 var prepareDateValidation = require( './prepare-date-validation' )
 
 fetchAvatar({
-  emailSelectorQuery: '#avatar',
-  avatarSelectorQuery: '[name="email"]'
+  imageElement: '#avatar',
+  emailElement: '[name="email"]'
 })
 
 prepareSelect({
-  query: '[name="nationality"]'
+  nationalityElement: '[name="nationality"]'
 })
 
 prepareDateValidation({
-  query: '[name="birthdate"]',
-  form: 'form'
+  dateElement: '[name="birthdate"]',
+  formElement: 'form'
 })

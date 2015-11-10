@@ -5,14 +5,14 @@ var GRAVATAR_URL = 'http://www.gravatar.com/avatar/'
 var DEBOUNCE_DELAY = 1000
 
 function fetchAvatar( options ) {
-  var avatarElement = document.querySelector( options.emailSelectorQuery )
-  var emailElement = document.querySelector( options.avatarSelectorQuery )
+  var imageElement = document.querySelector( options.imageElement )
+  var emailElement = document.querySelector( options.emailElement )
 
   // NOTE: Debounce to reduce number of image requests from gravatar
   var updateImage = debounce( function() {
     // NOTE: Md5 email is required for Gravatar url format
     var emailHash = md5( emailElement.value.toLowerCase() )
-    avatarElement.src = GRAVATAR_URL + emailHash
+    imageElement.src = GRAVATAR_URL + emailHash
   }, DEBOUNCE_DELAY )
 
   emailElement.addEventListener( 'input', function() {
