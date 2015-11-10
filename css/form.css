@@ -37,6 +37,10 @@ button[type="submit"] {
   display: block;
 }
 
+button[type="submit"]:hover, input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
 .row {
   display: table-row;
 }
