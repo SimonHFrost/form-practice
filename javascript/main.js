@@ -4,6 +4,7 @@ var dateValidation = require( './date-validation' )
 var passwordStrength = require( './password-strength' )
 var overEighteenCheck = require( './over-eighteen-check' )
 var passwordConfirmationCheck = require( './password-confirmation-check' )
+var passwordConsecutiveCheck = require( './password-consecutive-check' )
 
 avatarLookup({
   imageElement: '#avatar',
@@ -31,5 +32,10 @@ overEighteenCheck({
 passwordConfirmationCheck({
   passwordElement: '[name="password"]',
   passwordConfirmationElement: '[name="password-confirm"]',
+  formElement: 'form'
+})
+
+passwordConsecutiveCheck({
+  passwordElement: '[name="password"]',
   formElement: 'form'
 })
