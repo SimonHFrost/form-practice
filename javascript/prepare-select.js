@@ -3,7 +3,7 @@ window.jQuery = $ = require( 'jquery' )
 require( 'drmonty-chosen' )
 
 function prepareSelect( options ) {
-  $( options.selectSelectorQuery ).chosen( this.options )
+  $( options.query ).chosen( this.options )
 }
 
 module.exports = prepareSelect
