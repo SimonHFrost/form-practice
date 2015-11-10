@@ -2,6 +2,7 @@ var avatarLookup = require( './avatar-lookup' )
 var enhancedSelectComponent = require( './enhanced-select-component' )
 var dateValidation = require( './date-validation' )
 var passwordStrength = require( './password-strength' )
+var overEighteenCheck = require( './over-eighteen-check' )
 
 avatarLookup({
   imageElement: '#avatar',
@@ -19,4 +20,9 @@ dateValidation({
 
 passwordStrength({
   passwordElement: '[name="password"]'
+})
+
+overEighteenCheck({
+  dateElement: '[name="birthdate"]',
+  formElement: 'form'
 })

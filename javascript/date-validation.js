@@ -7,7 +7,7 @@ function dateValidation( options ) {
   formElement.addEventListener( 'submit', function( event ) {
     if ( !dateElement.value.match( DATE_REGEX ) ) {
       event.preventDefault()
-      alert( "Place use a format like '01/01/2001'" )
+      alert( "Please use a format like '01/01/2001'" )
     }
   })
 
