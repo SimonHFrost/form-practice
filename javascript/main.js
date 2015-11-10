@@ -1,17 +1,22 @@
-var avatarLookup = require( './fetch-avatar' )
-var styledSelectComponent = require( './styled-select-component' )
-var dateValidation = require( './prepare-date-validation' )
+var avatarLookup = require( './avatar-lookup' )
+var enhancedSelectComponent = require( './enhanced-select-component' )
+var dateValidation = require( './date-validation' )
+var passwordStrength = require( './password-strength' )
 
 avatarLookup({
   imageElement: '#avatar',
   emailElement: '[name="email"]'
 })
 
-styledSelectComponent({
+enhancedSelectComponent({
   nationalityElement: '[name="nationality"]'
 })
 
 dateValidation({
   dateElement: '[name="birthdate"]',
   formElement: 'form'
+})
+
+passwordStrength({
+  passwordElement: '[name="password"]'
 })
