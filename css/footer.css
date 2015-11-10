@@ -33,6 +33,6 @@ body {
   margin: 0 auto -64px;
 }
 
-footer, .push {
+footer, .sticky-footer-adjust {
   height: 64px;
 }
