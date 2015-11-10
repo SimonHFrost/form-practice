@@ -49,10 +49,6 @@ select {
   line-height: 36px;
 }
 
-#avatar {
-  margin: auto;
-}
-
 button[type="submit"] {
   width: 100%;
   margin: auto;
