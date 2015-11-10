@@ -15,50 +15,59 @@
       </header>
       <main>
         <form method="post">
+
           <div class="row">
             <div class="column">
               <label>Full Name</label>
-              <input type="text" name="name" placeholder="Matt Daemon"></input>
+              <input type="text" name="name" required placeholder="Matt Daemon"></input>
             </div>
+
             <div class="column">
               <label>Date of Birth</label>
-              <input type="text" name="birthdate" placeholder="08/10/1970"></input>
+              <input type="date" name="birthdate" required placeholder="08/10/1970"></input>
             </div class="column">
           </div>
 
           <div class="row">
             <div class="column">
               <label>Address</label>
-              <input type="text" name="address" placeholder="Boston, Massachusetts, USA"></input>
+              <input type="text" name="address" required placeholder="Boston, Massachusetts, USA"></input>
             </div>
           </div>
 
           <div class="row">
             <div class="column">
               <label>Nationality</label>
-              <input type="text" name="nationality" placeholder="American"></input>
+              <select name="nationality">
+                <option value="american">America</option>
+                <option value="german">German</option>
+                <option value="new-zealand">New Zealand</option>
+                <option value="spain">Spain</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="france">France</option>
+              </select>
             </div>
 
             <div class="column">
               <label>Email Address</label>
-              <input type="text" name="email" placeholder="matt.daemon@gmail.com"></input>
+              <input type="email" name="email" required placeholder="matt.daemon@gmail.com"></input>
             </div>
           </div>
 
           <div class="row">
             <div class="column">
               <label>Password</label>
-              <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></input>
+              <input type="password" name="password" required placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></input>
             </div>
 
             <div class="column">
               <label>Confirm Password</label>
-              <input type="password" name="password-confirm" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></input>
+              <input type="password" name="password-confirm" required placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></input>
             </div>
           </div>
 
           <div class="row">
-            <input type="checkbox" name="terms" id="terms"></input><label for="terms">I agree to the Terms and Conditions</label>
+            <input type="checkbox" name="terms" required id="terms"></input><label for="terms">I agree to the Terms and Conditions</label>
           </div>
 
           <div class="row">
@@ -66,14 +75,17 @@
               <button type="submit">Submit</button>
             </div>
           </div>
+
         </form>
       </main>
       <div class="push"></div>
     </div>
+
     <footer>
       <div>
         <p>Created by Simon Frost</p>
       </div>
     </footer>
+
   </body>
 </html>

@@ -16,8 +16,19 @@ input, button {
   padding: 8px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
   width: 240px;
+}
+
+input[type="date"] {
+  font-family: 'Roboto', sans-serif;
+  /* Override top and bottom margins for date input as the element is taller*/
+  padding: 5px 8px;
+}
+
+select {
+  width: 260px;
+  line-height: 36px;
 }
 
 button[type="submit"] {
