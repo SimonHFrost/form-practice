@@ -5,6 +5,7 @@ var passwordStrength = require( './password-strength' )
 var overEighteenCheck = require( './over-eighteen-check' )
 var passwordConfirmationCheck = require( './password-confirmation-check' )
 var passwordConsecutiveCheck = require( './password-consecutive-check' )
+var cookiePrompt = require( './cookie-prompt' )
 
 avatarLookup({
   imageElement: '#avatar',
@@ -38,4 +39,8 @@ passwordConfirmationCheck({
 passwordConsecutiveCheck({
   passwordElement: '[name="password"]',
   formElement: 'form'
+})
+
+cookiePrompt({
+  acceptCookiesElement: '#accept-cookies'
 })

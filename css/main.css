@@ -23,3 +23,22 @@ main {
   padding: 16px;
   margin-bottom: 64px;
 }
+
+.hide {
+  display: none;
+}
+
+#accept-cookies {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  height: 24px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+#accept-cookies:hover {
+  cursor: pointer;
+}
