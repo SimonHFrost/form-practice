@@ -31,7 +31,7 @@ button {
 }
 
 input[type="date"] {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* Override top and bottom margins for date input as the element is taller*/
   padding: 5px 8px;
 }
@@ -47,6 +47,11 @@ select {
   font-size: 16px;
   width: 260px;
   line-height: 36px;
+}
+
+.loading {
+  background-image: url("../images/loading.gif");
+  background-repeat: no-repeat;
 }
 
 button[type="submit"] {
@@ -66,4 +71,8 @@ button[type="submit"]:hover,
 input[type="checkbox"]:hover,
 input[type="checkbox"] + label:hover {
   cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: inline;
 }
