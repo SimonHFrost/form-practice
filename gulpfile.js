@@ -4,6 +4,7 @@ var source = require('vinyl-source-stream')
 var buffer = require('vinyl-buffer')
 var browserify = require('browserify')
 var watchify = require('watchify')
+var uglify = require('gulp-uglify')
 
 function compile (watch) {
   var bundler = watchify(
@@ -20,6 +21,7 @@ function compile (watch) {
       .pipe(source('bundle.js'))
       .pipe(buffer())
       .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe( uglify() )
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('./dist'))
   }
