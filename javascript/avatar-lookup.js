@@ -13,12 +13,11 @@ function avatarLookup( options ) {
     // NOTE: Md5 email is required for Gravatar url format
     var emailHash = md5( emailElement.value.toLowerCase() )
     imageElement.src = GRAVATAR_URL + emailHash
-    imageElement.classList.remove( 'loading' )
   }, DEBOUNCE_DELAY )
 
   emailElement.addEventListener( 'input', function() {
     if ( emailElement.value ) {
-      imageElement.classList.add( 'loading' )
+      imageElement.src = './images/loading.gif'
     }
     updateImage()
   })

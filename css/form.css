@@ -49,6 +49,15 @@ select {
   line-height: 36px;
 }
 
+#avatar {
+  margin-top: 8px;
+}
+
+#avatar-loading {
+  height: 16px;
+  width: 16px;
+}
+
 .loading {
   background-image: url("../images/loading.gif");
   background-repeat: no-repeat;
