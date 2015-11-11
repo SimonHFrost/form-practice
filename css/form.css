@@ -63,6 +63,11 @@ select {
   background-repeat: no-repeat;
 }
 
+.error {
+  margin:4px;
+  color: red;
+}
+
 button[type="submit"] {
   width: 100%;
   margin: auto;

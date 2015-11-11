@@ -42,6 +42,7 @@
             <div class="column">
               <label>Date of Birth</label>
               <input type="text" name="birthdate" required placeholder="08/10/1970"></input>
+              <div class="error"></div>
             </div class="column">
           </div>
 
@@ -68,6 +69,7 @@
             <div class="column">
               <label>Email Address</label>
               <input type="email" name="email" required placeholder="matt.daemon@gmail.com"></input>
+              <div class="error"></div>
             </div>
             <div class="column">
               <label>Avatar from Gravatar.com</label>
@@ -79,6 +81,8 @@
             <div class="column">
               <label>Password</label>
               <input type="password" name="password" required placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"></input>
+              <div class="error"></div>
+              <div id="password-strength">Strength: 0</div>
             </div>
 
             <div class="column">

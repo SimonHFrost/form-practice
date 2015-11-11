@@ -22,7 +22,8 @@ dateValidation({
 })
 
 passwordStrength({
-  passwordElement: '[name="password"]'
+  passwordElement: '[name="password"]',
+  passwordStrengthElement: '#password-strength'
 })
 
 overEighteenCheck({
